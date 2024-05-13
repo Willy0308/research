@@ -1,0 +1,46 @@
+Args in experiment:
+Namespace(activation='gelu', affine=0, batch_size=256, c_out=7, channel_id=0, checkpoints='./checkpoints/', d_ff=2048, d_layers=1, d_model=256, data='ETTh1', data_path='ETTh1.csv', dec_in=7, dec_way='pmf', decomposition=0, des='test', devices='0,1', distil=True, do_predict=False, dropout=0.5, e_layers=2, embed='timeF', embed_type=0, enc_in=1, factor=1, fc_dropout=0.05, features='S', freq='h', gpu=1, head_dropout=0.0, individual=0, is_training=1, itr=1, kernel_size=25, label_len=0, learning_rate=0.0005, loss='mse', lradj='type3', model='SegRNN', model_id='ETTh1_720_192', moving_avg=25, n_heads=8, num_workers=10, output_attention=False, padding_patch='end', patch_len=16, patience=5, pct_start=0.3, pred_len=192, random_seed=2024, revin=0, rnn_type='gru', root_path='./dataset/', seg_len=48, seq_len=720, stride=8, subtract_last=0, target='OT', test_flop=False, train_epochs=30, use_amp=False, use_gpu=True, use_multi_gpu=False, win_len=48)
+Use GPU: cuda:1
+>>>>>>>start training : ETTh1_720_192_SegRNN_ETTh1_ftS_sl720_pl192_dm256_dr0.5_rtgru_dwpmf_sl48_test_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2689
+test 2689
+Epoch: 1 cost time: 1.2482938766479492
+Epoch: 1, Steps: 30 | Train Loss: 0.4334327 Vali Loss: 0.3273752 Test Loss: 0.2517242
+Validation loss decreased (inf --> 0.327375).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 2 cost time: 1.2913801670074463
+Epoch: 2, Steps: 30 | Train Loss: 0.3694747 Vali Loss: 0.2721187 Test Loss: 0.2099857
+Validation loss decreased (0.327375 --> 0.272119).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3 cost time: 1.2225959300994873
+Epoch: 3, Steps: 30 | Train Loss: 0.3312187 Vali Loss: 0.2626165 Test Loss: 0.2072283
+Validation loss decreased (0.272119 --> 0.262616).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 4 cost time: 1.2396471500396729
+Epoch: 4, Steps: 30 | Train Loss: 0.3181504 Vali Loss: 0.2580187 Test Loss: 0.2041641
+Validation loss decreased (0.262616 --> 0.258019).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 5 cost time: 1.2484855651855469
+Epoch: 5, Steps: 30 | Train Loss: 0.3124561 Vali Loss: 0.2591342 Test Loss: 0.2090425
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0003200000000000001
+Epoch: 6 cost time: 1.2486603260040283
+Epoch: 6, Steps: 30 | Train Loss: 0.3095451 Vali Loss: 0.2593743 Test Loss: 0.2131851
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.00025600000000000004
+Epoch: 7 cost time: 1.2150487899780273
+Epoch: 7, Steps: 30 | Train Loss: 0.3052946 Vali Loss: 0.2619198 Test Loss: 0.2108999
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.00020480000000000004
+Epoch: 8 cost time: 1.2536418437957764
+Epoch: 8, Steps: 30 | Train Loss: 0.3008401 Vali Loss: 0.2673302 Test Loss: 0.2071453
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.00016384000000000006
+Epoch: 9 cost time: 1.2330551147460938
+Epoch: 9, Steps: 30 | Train Loss: 0.2977873 Vali Loss: 0.2682621 Test Loss: 0.2000471
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : ETTh1_720_192_SegRNN_ETTh1_ftS_sl720_pl192_dm256_dr0.5_rtgru_dwpmf_sl48_test_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:0.06613195687532425, mae:0.20416413247585297, ms/sample:0.47067817412773977

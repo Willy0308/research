@@ -1,0 +1,11 @@
+Args in experiment:
+Namespace(activation='gelu', affine=0, batch_size=128, c_out=6, channel_id=1, checkpoints='./checkpoints/', d_ff=2048, d_layers=1, d_model=512, data='custom', data_path='ausdata.csv', dec_in=6, dec_way='pmf', decomposition=0, des='test', devices='0,1', distil=True, do_predict=False, dropout=0.1, e_layers=2, embed='timeF', embed_type=0, enc_in=6, factor=1, fc_dropout=0.05, features='M', freq='h', gpu=0, head_dropout=0.0, individual=0, is_training=1, itr=1, kernel_size=25, label_len=0, learning_rate=0.001, loss='mse', lradj='type3', model='SegRNN', model_id='Electricity_720_120', moving_avg=25, n_heads=8, num_workers=10, output_attention=False, padding_patch='end', patch_len=16, patience=30, pct_start=0.3, pred_len=120, random_seed=2024, revin=0, rnn_type='gru', root_path='./dataset/ausdata', seg_len=24, seq_len=720, stride=8, subtract_last=0, target='OT', test_flop=False, train_epochs=100, use_amp=False, use_gpu=True, use_multi_gpu=False, win_len=48)
+Use GPU: cuda:0
+Model size: 6.12 MB
+Number of trainable parameters: 1603864
+>>>>>>>start training : Electricity_720_120_SegRNN_custom_ftM_sl720_pl120_dm512_dr0.1_rtgru_dwpmf_sl24_test_0_ausdata>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 29838
+val 4264
+test 8646
+	iters: 100, epoch: 1 | loss: 0.4551457
+	speed: 0.0681s/iter; left time: 1580.9842s
